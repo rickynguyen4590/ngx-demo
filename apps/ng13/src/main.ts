@@ -7,14 +7,13 @@ import { environment } from './environments/environment';
 if (environment.production) {
   enableProdMode();
 }
-const abc = async() => {
-  await new Promise((resolve) => {
-    console.log('123');
-    setTimeout(resolve, 5000);
-  });
+const delay = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
+const abc = async () => {
+  console.log(123);
+  await delay(100);
   console.log(456);
 };
-abc().catch(e => console.log(e));
+abc().catch((e) => console.log(e));
 platformBrowserDynamic()
   .bootstrapModule(AppModule)
   .catch((err) => console.error(err));
