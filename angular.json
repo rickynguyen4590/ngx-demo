@@ -5,6 +5,7 @@
     "admin-e2e": "apps/admin-e2e",
     "core": "libs/core",
     "ng13": "apps/ng13",
-    "ng13-e2e": "apps/ng13-e2e"
+    "ng13-e2e": "apps/ng13-e2e",
+    "test": "libs/test"
   }
 }
