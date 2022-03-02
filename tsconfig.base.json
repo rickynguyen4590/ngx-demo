@@ -16,6 +16,7 @@
     "baseUrl": ".",
     "paths": {
       "@ng13/core": ["libs/core/src/index.ts"],
+      "@ng13/paris": ["libs/paris/src/index.ts"],
       "@ng13/test": ["libs/test/src/index.ts"]
     }
   },

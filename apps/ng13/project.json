@@ -15,7 +15,12 @@
         "tsConfig": "apps/ng13/tsconfig.app.json",
         "inlineStyleLanguage": "scss",
         "assets": ["apps/ng13/src/favicon.ico", "apps/ng13/src/assets"],
-        "styles": ["apps/ng13/src/styles.scss"],
+        "styles": [
+          "apps/ng13/src/styles.scss",
+          "node_modules/primeng/resources/themes/saga-blue/theme.css",
+          "node_modules/primeng/resources/primeng.min.css",
+          "node_modules/primeicons/primeicons.css"
+        ],
         "scripts": []
       },
       "configurations": {

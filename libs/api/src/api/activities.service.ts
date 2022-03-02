@@ -125,12 +125,14 @@ export class ActivitiesService {
     reportProgress?: boolean,
     options?: { httpHeaderAccept?: '*/*'; context?: HttpContext }
   ): Observable<Activity>;
+
   public create17(
     body?: Activity,
     observe?: 'response',
     reportProgress?: boolean,
     options?: { httpHeaderAccept?: '*/*'; context?: HttpContext }
   ): Observable<HttpResponse<Activity>>;
+
   public create17(
     body?: Activity,
     observe?: 'events',
