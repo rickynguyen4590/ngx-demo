@@ -1,0 +1,18 @@
+<div class="row">
+  <div class="col-6">
+    <h3>List 1</h3>
+    <ul class="list-group">
+      <li *ngFor="let item of productList" class="list-group-item">
+        <ng13-product-item1 [product]="item"></ng13-product-item1>
+      </li>
+    </ul>
+  </div>
+  <div class="col-6">
+    <h3>List 2</h3>
+    <ul class="list-group">
+      <li *ngFor="let item of productList" class="list-group-item">
+        <ng13-product-item2 [product]="item"></ng13-product-item2>
+      </li>
+    </ul>
+  </div>
+</div>

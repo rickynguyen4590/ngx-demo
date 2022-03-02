@@ -1,0 +1,18 @@
+<div>
+  Id: <b>{{ this.product.Id }}</b>
+</div>
+
+<div>
+  Name: <b>{{ this.product.Name }}</b>
+</div>
+
+<div>
+  Updated: <b>{{ time | date: 'H:m:s' }}</b>
+</div>
+
+<div>
+  <button (click)="getSubs(product.Id)">Subs</button>
+  <div>Load: {{loading}}</div>
+  <div>Subs: {{ displaySub(subs) }}</div>
+</div>
+

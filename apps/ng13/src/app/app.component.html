@@ -1,1 +1,16 @@
-<div></div>
+<div class="container">
+  <div class="row">
+    <ng13-product-summary [productList]="products"></ng13-product-summary>
+  </div>
+  <div class="row bottom">
+    <ng13-product-list
+      [productList]="products"
+      class="col-10"
+    ></ng13-product-list>
+    <div class="col-2">
+      <button (click)="appClick()">Add Product</button>
+      <hr>
+      <button (click)="updateRef()">Update Ref</button>
+    </div>
+  </div>
+</div>

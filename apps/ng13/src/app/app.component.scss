@@ -1,7 +1,12 @@
 :host {
   display: block;
+  margin: 0 auto;
   font-family: sans-serif;
-  min-width: 300px;
-  max-width: 600px;
-  margin: 50px auto;
+  width: 900px;
+  height: 600px;
+  border: 1px solid #ccc;
+}
+
+.bottom {
+  margin: 20px;
 }
