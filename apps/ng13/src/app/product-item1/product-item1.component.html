@@ -12,8 +12,7 @@
 
 <div>
   <button (click)="getSubs(product.Id)">Subs</button>
-  <div>Load: {{loading}}</div>
-  <div>Subs: {{ subs | json }}</div>
+  <div>Load: {{ loading }}</div>
   <!-- <div>Subs: {{ subs$ | async | json }}</div> -->
+  <ng13-product-item1-sub [subs]="subs"></ng13-product-item1-sub>
 </div>
-
