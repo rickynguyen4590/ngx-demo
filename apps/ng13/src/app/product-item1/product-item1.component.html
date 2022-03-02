@@ -13,6 +13,7 @@
 <div>
   <button (click)="getSubs(product.Id)">Subs</button>
   <div>Load: {{loading}}</div>
-  <div>Subs: {{ displaySub(subs) }}</div>
+  <div>Subs: {{ subs | json }}</div>
+  <!-- <div>Subs: {{ subs$ | async | json }}</div> -->
 </div>
 

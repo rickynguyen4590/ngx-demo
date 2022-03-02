@@ -1,6 +1,20 @@
-import { Component, HostListener } from '@angular/core';
+import { Component } from '@angular/core';
 import { Product } from './product';
 
+const allProduct = [
+  {
+    Id: 1,
+    Name: 'Product 1',
+  },
+  {
+    Id: 2,
+    Name: 'Product 2',
+  },
+  {
+    Id: 3,
+    Name: 'Product 3',
+  },
+];
 @Component({
   selector: 'ng13-root',
   templateUrl: './app.component.html',
@@ -9,20 +23,7 @@ import { Product } from './product';
 export class AppComponent {
   title = 'ng13';
 
-  products: Product[] = [
-    {
-      Id: 1,
-      Name: 'Product 1',
-    },
-    {
-      Id: 2,
-      Name: 'Product 2',
-    },
-    {
-      Id: 3,
-      Name: 'Product 3',
-    },
-  ];
+  products: Product[] = [...allProduct];
 
   count = 3;
 
@@ -37,9 +38,13 @@ export class AppComponent {
     this.products[2].Name = 'Thanos';
   }
 
-  @HostListener('mousemove')
-  croll(event: MouseEvent) {
-    // console.log(event);
-    return;
+  reset() {
+    this.products = [...allProduct];
   }
+
+  // @HostListener('mousemove')
+  // croll(event: MouseEvent) {
+  //   // console.log(event);
+  //   return;
+  // }
 }

@@ -2,9 +2,11 @@ import {
   ChangeDetectionStrategy,
   ChangeDetectorRef,
   Component,
+  HostListener,
   Input,
   OnInit,
 } from '@angular/core';
+import { Observable } from 'rxjs';
 import { Product, SubProduct } from '../product';
 import { ProductService } from '../product.service';
 
@@ -20,6 +22,8 @@ export class ProductItem1Component implements OnInit {
   time: Date;
 
   subs?: SubProduct[];
+
+  subs$?: Observable<SubProduct[]>;
 
   loading = '';
 
@@ -42,10 +46,17 @@ export class ProductItem1Component implements OnInit {
       this.subs = subs;
       this.loading = 'Loaded';
     });
+
+    this.subs$ = this.productService.getSubProducts(id);
   }
 
   displaySub(subs?: SubProduct[]) {
     console.log('displaySub');
     return JSON.stringify(subs);
   }
+
+  // @HostListener('mousemove')
+  // croll() {
+  //   return;
+  // }
 }
