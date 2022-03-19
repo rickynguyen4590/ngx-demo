@@ -1,12 +1,8 @@
 {
   "version": 2,
   "projects": {
-    "admin": "apps/admin",
-    "admin-e2e": "apps/admin-e2e",
-    "core": "libs/core",
     "ng13": "apps/ng13",
     "ng13-e2e": "apps/ng13-e2e",
-    "paris": "libs/paris",
-    "test": "libs/test"
+    "product": "libs/product"
   }
 }

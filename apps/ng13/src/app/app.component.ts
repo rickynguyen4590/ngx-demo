@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Product } from './product';
+import { Product } from '@ng13/product';
 
 const allProduct = [
   {

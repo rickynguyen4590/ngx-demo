@@ -1,6 +1,6 @@
 {
   "extends": "./tsconfig.json",
-  "include": ["**/*.ts"],
+  "include": ["**/*.ts", "../../libs/product/src/lib/move-store.service.spec.ts"],
   "compilerOptions": {
     "types": ["jest", "node"]
   }
