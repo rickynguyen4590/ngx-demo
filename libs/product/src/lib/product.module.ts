@@ -15,7 +15,7 @@ import { ProductSummaryComponent } from './product-summary/product-summary.compo
     ProductItem1Component,
     ProductItem1SubComponent,
     ProductItem2Component,
-    ProductDashboardComponent,
+    ProductDashboardComponent
   ],
   imports: [CommonModule, ProductRoutingModule],
 })

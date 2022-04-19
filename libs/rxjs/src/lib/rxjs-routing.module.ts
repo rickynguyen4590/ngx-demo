@@ -2,6 +2,7 @@ import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { Route, RouterModule } from '@angular/router';
 import { ChangeAfterCheckComponent } from './change-after-check/change-after-check.component';
+import { InnerComponent } from './change-after-check/inner/inner.component';
 import { MemoryLeakComponent } from './memory-leak/memory-leak.component';
 
 const routes: Route[] = [
@@ -16,7 +17,11 @@ const routes: Route[] = [
 ];
 
 @NgModule({
-  declarations: [MemoryLeakComponent, ChangeAfterCheckComponent],
+  declarations: [
+    MemoryLeakComponent,
+    ChangeAfterCheckComponent,
+    InnerComponent,
+  ],
   imports: [CommonModule, RouterModule.forChild(routes)],
 })
 export class RxjsRoutingModule {}
