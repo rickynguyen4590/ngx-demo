@@ -13,8 +13,8 @@ export class ProductListComponent implements OnInit {
   @Input() productList!: Product[];
 
   readonly movies$ = this.componentStore.state$.pipe(
-    map((state) => state.movies),
-    tap(abx => console.log(abx))
+    map((state) => state.movies)
+    // tap(abx => console.log(abx))
   );
 
   constructor(
@@ -22,7 +22,6 @@ export class ProductListComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-    console.log(this.componentStore);
-
+    return;
   }
 }

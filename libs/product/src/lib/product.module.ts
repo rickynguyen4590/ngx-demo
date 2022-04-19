@@ -1,11 +1,12 @@
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ProductSummaryComponent } from './product-summary/product-summary.component';
-import { ProductListComponent } from './product-list/product-list.component';
+import { NgModule } from '@angular/core';
+import { ChangeAfterCheckComponent } from './change-after-check/change-after-check.component';
+import { MemoryLeakComponent } from './memory-leak/memory-leak.component';
+import { ProductItem1SubComponent } from './product-item1-sub/product-item1-sub.component';
 import { ProductItem1Component } from './product-item1/product-item1.component';
 import { ProductItem2Component } from './product-item2/product-item2.component';
-import { ProductItem1SubComponent } from './product-item1-sub/product-item1-sub.component';
-import { MemoryLeakComponent } from './memory-leak/memory-leak.component';
+import { ProductListComponent } from './product-list/product-list.component';
+import { ProductSummaryComponent } from './product-summary/product-summary.component';
 
 @NgModule({
   declarations: [
@@ -15,8 +16,14 @@ import { MemoryLeakComponent } from './memory-leak/memory-leak.component';
     ProductItem1SubComponent,
     ProductItem2Component,
     MemoryLeakComponent,
+    ChangeAfterCheckComponent,
   ],
   imports: [CommonModule],
-  exports: [ProductSummaryComponent, ProductListComponent, MemoryLeakComponent],
+  exports: [
+    ProductSummaryComponent,
+    ProductListComponent,
+    MemoryLeakComponent,
+    ChangeAfterCheckComponent,
+  ],
 })
 export class ProductModule {}
