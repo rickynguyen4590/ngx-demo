@@ -1,0 +1,28 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Ng13</a>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="'product'" routerLinkActive="active"
+          >Product</a
+        >
+      </li>
+      <li class="nav-item">
+        <a
+          class="nav-link"
+          [routerLink]="['rxjs', 'memory-leak']"
+          routerLinkActive="active"
+          >Memory Leak</a
+        >
+      </li>
+      <li class="nav-item">
+        <a
+          class="nav-link"
+          [routerLink]="['rxjs', 'change-after-check']"
+          routerLinkActive="active"
+          >Change After Check</a
+        >
+      </li>
+    </ul>
+  </div>
+</nav>

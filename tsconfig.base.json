@@ -15,7 +15,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@ng13/product": ["libs/product/src/index.ts"]
+      "@ng13/product": ["libs/product/src/index.ts"],
+      "@ng13/rxjs": ["libs/rxjs/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

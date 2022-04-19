@@ -6,11 +6,11 @@ import { StoreModule } from '@ngrx/store';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ProductModule } from '@ng13/product';
+import { NavComponent } from './nav/nav.component';
+import { EmptyComponent } from './empty/empty.component';
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, NavComponent, EmptyComponent],
   imports: [
-    ProductModule,
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,

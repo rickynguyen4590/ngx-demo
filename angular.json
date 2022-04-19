@@ -3,6 +3,7 @@
   "projects": {
     "ng13": "apps/ng13",
     "ng13-e2e": "apps/ng13-e2e",
-    "product": "libs/product"
+    "product": "libs/product",
+    "rxjs": "libs/rxjs"
   }
 }

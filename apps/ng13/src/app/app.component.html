@@ -1,21 +1,2 @@
-<!-- <ng13-memory-leak></ng13-memory-leak> -->
-<!-- <ng13-change-after-check></ng13-change-after-check> -->
-<div class="container">
-  <div class="row">
-    <ng13-product-summary [productList]="products"></ng13-product-summary>
-  </div>
-  <div class="row bottom">
-    <ng13-product-list
-      [productList]="products"
-      class="col-10"
-    ></ng13-product-list>
-    <div class="col-2">
-      <button (click)="appClick()">Add Product</button>
-      <hr>
-      <button (click)="updateRef()">Update Ref</button>
-      <hr>
-      <button (click)="reset()">Reset</button>
-    </div>
-  </div>
-</div>
-
+<ng13-nav></ng13-nav>
+<router-outlet></router-outlet>
