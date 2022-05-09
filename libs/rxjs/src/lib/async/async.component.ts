@@ -1,11 +1,11 @@
 import { HttpClient } from '@angular/common/http';
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { Component } from '@angular/core';
 import { delay, firstValueFrom } from 'rxjs';
-
+import { loadFromJS } from './xx';
 @Component({
   selector: 'ng13-async',
   templateUrl: './async.component.html',
-  styleUrls: ['./async.component.scss']
+  styleUrls: ['./async.component.scss'],
 })
 export class AsyncComponent {
   loading = false;
@@ -23,6 +23,8 @@ export class AsyncComponent {
           .pipe(delay(5000))
       );
       console.log('async/await');
+
+      this.todo = await loadFromJS();
       this.loading = false;
     } catch (e) {
       this.loading = false;
