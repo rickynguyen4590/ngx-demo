@@ -5,8 +5,7 @@ import { delay, firstValueFrom } from 'rxjs';
 @Component({
   selector: 'ng13-async',
   templateUrl: './async.component.html',
-  styleUrls: ['./async.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush,
+  styleUrls: ['./async.component.scss']
 })
 export class AsyncComponent {
   loading = false;
@@ -23,7 +22,7 @@ export class AsyncComponent {
           .get('https://jsonplaceholder.typicode.com/todos/1')
           .pipe(delay(5000))
       );
-      debugger;
+      console.log('async/await');
       this.loading = false;
     } catch (e) {
       this.loading = false;
