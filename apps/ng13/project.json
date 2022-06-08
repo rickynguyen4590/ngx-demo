@@ -1,6 +1,6 @@
 {
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "projectType": "application",
-  "root": "apps/ng13",
   "sourceRoot": "apps/ng13/src",
   "prefix": "ng13",
   "targets": {
@@ -84,7 +84,7 @@
       "executor": "@nrwl/jest:jest",
       "outputs": ["coverage/apps/ng13"],
       "options": {
-        "jestConfig": "apps/ng13/jest.config.js",
+        "jestConfig": "apps/ng13/jest.config.ts",
         "passWithNoTests": true
       }
     }

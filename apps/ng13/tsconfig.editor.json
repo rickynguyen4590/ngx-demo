@@ -1,7 +1,11 @@
 {
   "extends": "./tsconfig.json",
-  "include": ["**/*.ts", "../../libs/product/src/lib/move-store.service.spec.ts"],
+  "include": [
+    "**/*.ts",
+    "../../libs/product/src/lib/move-store.service.spec.ts"
+  ],
   "compilerOptions": {
     "types": ["jest", "node"]
-  }
+  },
+  "exclude": ["jest.config.ts"]
 }

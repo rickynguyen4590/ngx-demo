@@ -1,5 +1,6 @@
-module.exports = {
-  displayName: 'ng13',
+/* eslint-disable */
+export default {
+  displayName: 'rxjs',
   preset: '../../jest.preset.js',
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
   globals: {
@@ -8,7 +9,7 @@ module.exports = {
       stringifyContentPathRegex: '\\.(html|svg)$',
     },
   },
-  coverageDirectory: '../../coverage/apps/ng13',
+  coverageDirectory: '../../coverage/libs/rxjs',
   transform: {
     '^.+\\.(ts|mjs|js|html)$': 'jest-preset-angular',
   },
