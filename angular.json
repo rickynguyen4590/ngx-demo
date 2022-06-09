@@ -1,6 +1,7 @@
 {
   "version": 2,
   "projects": {
+    "core": "libs/core",
     "ng14": "libs/ng14",
     "ngx-demo": "apps/ngx-demo",
     "ngx-demo-e2e": "apps/ngx-demo-e2e",

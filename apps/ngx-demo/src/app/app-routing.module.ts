@@ -11,6 +11,10 @@ const routes: Route[] = [
     loadChildren: () => import('@ng13/rxjs').then((m) => m.RxjsModule),
   },
   {
+    path: 'ng14',
+    loadChildren: () => import('@ng13/ng14').then((m) => m.ROUTES),
+  },
+  {
     path: '',
     component: EmptyComponent,
   },
