@@ -1,22 +1,22 @@
 {
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "projectType": "application",
-  "sourceRoot": "apps/ng13/src",
+  "sourceRoot": "apps/ngx-demo/src",
   "prefix": "ng13",
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:browser",
       "outputs": ["{options.outputPath}"],
       "options": {
-        "outputPath": "dist/apps/ng13",
-        "index": "apps/ng13/src/index.html",
-        "main": "apps/ng13/src/main.ts",
-        "polyfills": "apps/ng13/src/polyfills.ts",
-        "tsConfig": "apps/ng13/tsconfig.app.json",
+        "outputPath": "dist/apps/ngx-demo",
+        "index": "apps/ngx-demo/src/index.html",
+        "main": "apps/ngx-demo/src/main.ts",
+        "polyfills": "apps/ngx-demo/src/polyfills.ts",
+        "tsConfig": "apps/ngx-demo/tsconfig.app.json",
         "inlineStyleLanguage": "scss",
-        "assets": ["apps/ng13/src/favicon.ico", "apps/ng13/src/assets"],
+        "assets": ["apps/ngx-demo/src/favicon.ico", "apps/ngx-demo/src/assets"],
         "styles": [
-          "apps/ng13/src/styles.scss",
+          "apps/ngx-demo/src/styles.scss",
           "node_modules/primeng/resources/themes/saga-blue/theme.css",
           "node_modules/primeng/resources/primeng.min.css",
           "node_modules/primeicons/primeicons.css"
@@ -39,8 +39,8 @@
           ],
           "fileReplacements": [
             {
-              "replace": "apps/ng13/src/environments/environment.ts",
-              "with": "apps/ng13/src/environments/environment.prod.ts"
+              "replace": "apps/ngx-demo/src/environments/environment.ts",
+              "with": "apps/ngx-demo/src/environments/environment.prod.ts"
             }
           ],
           "outputHashing": "all"
@@ -60,10 +60,10 @@
       "executor": "@angular-devkit/build-angular:dev-server",
       "configurations": {
         "production": {
-          "browserTarget": "ng13:build:production"
+          "browserTarget": "ngx-demo:build:production"
         },
         "development": {
-          "browserTarget": "ng13:build:development"
+          "browserTarget": "ngx-demo:build:development"
         }
       },
       "defaultConfiguration": "development"
@@ -71,20 +71,23 @@
     "extract-i18n": {
       "executor": "@angular-devkit/build-angular:extract-i18n",
       "options": {
-        "browserTarget": "ng13:build"
+        "browserTarget": "ngx-demo:build"
       }
     },
     "lint": {
       "executor": "@nrwl/linter:eslint",
       "options": {
-        "lintFilePatterns": ["apps/ng13/src/**/*.ts", "apps/ng13/src/**/*.html"]
+        "lintFilePatterns": [
+          "apps/ngx-demo/src/**/*.ts",
+          "apps/ngx-demo/src/**/*.html"
+        ]
       }
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/apps/ng13"],
+      "outputs": ["coverage/apps/ngx-demo"],
       "options": {
-        "jestConfig": "apps/ng13/jest.config.ts",
+        "jestConfig": "apps/ngx-demo/jest.config.ts",
         "passWithNoTests": true
       }
     }

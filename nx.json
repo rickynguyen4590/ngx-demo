@@ -44,6 +44,6 @@
       "style": "scss"
     }
   },
-  "defaultProject": "ng13",
+  "defaultProject": "ngx-demo",
   "$schema": "./node_modules/nx/schemas/nx-schema.json"
 }

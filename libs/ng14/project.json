@@ -1,0 +1,22 @@
+{
+  "projectType": "library",
+  "sourceRoot": "libs/ng14/src",
+  "prefix": "ng13",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/ng14"],
+      "options": {
+        "jestConfig": "libs/ng14/jest.config.ts",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": ["libs/ng14/**/*.ts", "libs/ng14/**/*.html"]
+      }
+    }
+  },
+  "tags": []
+}

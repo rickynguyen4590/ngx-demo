@@ -1,8 +1,9 @@
 {
   "version": 2,
   "projects": {
-    "ng13": "apps/ng13",
-    "ng13-e2e": "apps/ng13-e2e",
+    "ng14": "libs/ng14",
+    "ngx-demo": "apps/ngx-demo",
+    "ngx-demo-e2e": "apps/ngx-demo-e2e",
     "product": "libs/product",
     "rxjs": "libs/rxjs"
   }
