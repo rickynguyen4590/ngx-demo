@@ -6,7 +6,6 @@ export function injectDestroy$() {
   const ref = inject(ChangeDetectorRef) as ViewRef;
   ref.onDestroy(() => {
     console.log('xxx');
-    debugger;
     destroy$.next(true);
     destroy$.complete();
   });
