@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 import { delay, firstValueFrom } from 'rxjs';
 import { loadFromJS } from './xx';
 @Component({
-  selector: 'ng13-async',
+  selector: 'nv-async',
   templateUrl: './async.component.html',
   styleUrls: ['./async.component.scss'],
 })

@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 @Component({
-  selector: 'ng13-root',
+  selector: 'nv-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
 })

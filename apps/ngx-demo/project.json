@@ -2,7 +2,7 @@
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "projectType": "application",
   "sourceRoot": "apps/ngx-demo/src",
-  "prefix": "ng13",
+  "prefix": "nx",
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:browser",

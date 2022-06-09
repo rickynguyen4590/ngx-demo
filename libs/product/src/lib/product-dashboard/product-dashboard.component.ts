@@ -17,7 +17,7 @@ const allProduct = [
 ];
 
 @Component({
-  selector: 'ng13-product-dashboard',
+  selector: 'nv-product-dashboard',
   templateUrl: './product-dashboard.component.html',
   styleUrls: ['./product-dashboard.component.scss'],
 })

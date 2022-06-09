@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'ng13-nav',
+  selector: 'nv-nav',
   templateUrl: './nav.component.html',
   styleUrls: ['./nav.component.scss'],
 })

@@ -4,7 +4,7 @@ import { map, tap } from 'rxjs';
 import { Product } from '../product';
 
 @Component({
-  selector: 'ng13-product-list',
+  selector: 'nv-product-list',
   templateUrl: './product-list.component.html',
   styleUrls: ['./product-list.component.scss'],
   providers: [ComponentStore],

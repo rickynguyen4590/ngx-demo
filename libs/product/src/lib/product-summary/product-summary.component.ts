@@ -2,7 +2,7 @@ import { Component, Input, OnInit } from '@angular/core';
 import { Product } from '../product';
 
 @Component({
-  selector: 'ng13-product-summary',
+  selector: 'nv-product-summary',
   templateUrl: './product-summary.component.html',
   styleUrls: ['./product-summary.component.scss'],
 })

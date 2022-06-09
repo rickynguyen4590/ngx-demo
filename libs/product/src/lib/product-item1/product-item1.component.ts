@@ -11,7 +11,7 @@ import { Product, SubProduct } from '../product';
 import { ProductService } from '../product.service';
 
 @Component({
-  selector: 'ng13-product-item1',
+  selector: 'nv-product-item1',
   templateUrl: './product-item1.component.html',
   styleUrls: ['./product-item1.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,

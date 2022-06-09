@@ -5,7 +5,7 @@ import {
 } from '@angular/core';
 
 @Component({
-  selector: 'ng13-rx-inner',
+  selector: 'nv--inner',
   templateUrl: './inner.component.html',
   styleUrls: ['./inner.component.scss'],
 })

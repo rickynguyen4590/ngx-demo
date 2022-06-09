@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { BehaviorSubject, of, switchMap, interval } from 'rxjs';
 
 @Component({
-  selector: 'ng13-memory-leak',
+  selector: 'nv-mory-leak',
   templateUrl: './memory-leak.component.html',
 })
 export class MemoryLeakComponent implements OnInit {

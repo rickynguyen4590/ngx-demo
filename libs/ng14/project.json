@@ -1,7 +1,7 @@
 {
   "projectType": "library",
   "sourceRoot": "libs/ng14/src",
-  "prefix": "ng13",
+  "prefix": "nv",
   "targets": {
     "test": {
       "executor": "@nrwl/jest:jest",

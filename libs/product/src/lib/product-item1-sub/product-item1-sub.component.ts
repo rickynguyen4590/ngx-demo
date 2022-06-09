@@ -6,7 +6,7 @@ import {
 } from '@angular/core';
 
 @Component({
-  selector: 'ng13-product-item1-sub',
+  selector: 'nv-product-item1-sub',
   templateUrl: './product-item1-sub.component.html',
   styleUrls: ['./product-item1-sub.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
