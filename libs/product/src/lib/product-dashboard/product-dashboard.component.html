@@ -1,19 +1,20 @@
 <div class="container">
   <div class="row">
-    <nv-product-summary [productList]="products"></nv-product-summary>
+    <div class="col-8">
+      <nv-product-summary [productList]="products"></nv-product-summary>
+    </div>
+    <div class="col-4">
+      <a class="btn btn-secondary" [routerLink]="['new']">New</a>
+    </div>
   </div>
   <div class="row bottom">
-    <nv-product-list
-      [productList]="products"
-      class="col-10"
-    ></nv-product-list>
+    <nv-product-list [productList]="products" class="col-10"></nv-product-list>
     <div class="col-2">
-      <button (click)="appClick()">Add Product</button>
+      <button (click)="appClick()" class="btn btn-secondary">Add Product</button>
       <hr>
-      <button (click)="updateRef()">Update Ref</button>
+      <button (click)="updateRef()" class="btn btn-secondary">Update Ref</button>
       <hr>
-      <button (click)="reset()">Reset</button>
+      <button (click)="reset()" class="btn btn-secondary">Reset</button>
     </div>
   </div>
 </div>
-

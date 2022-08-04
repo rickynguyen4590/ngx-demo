@@ -1,0 +1,24 @@
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <a class="btn btn-secondary" [routerLink]="['..']">Back</a>
+        </div>
+    </div>
+    <div class="row my-form">
+        <div class="col-12">
+            <form [formGroup]="form" (submit)="submit()">
+                <fieldset>
+                    <label>Name</label>
+                    <input formControlName="name">
+                </fieldset>
+                <fieldset>
+                    <label>Age</label>
+                    <input formControlName="age">
+                </fieldset>
+                <button type="submit">Submit</button>
+            </form>
+
+            <div>{{form.value | json}}</div>
+        </div>
+    </div>
+</div>
