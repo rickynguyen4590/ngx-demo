@@ -1,6 +1,7 @@
 import { CommonModule } from "@angular/common";
-import { AfterViewInit, ChangeDetectionStrategy, Component } from "@angular/core";
-import { BehaviorSubject } from "rxjs";
+import { AfterViewInit, ChangeDetectionStrategy, Component, OnInit } from "@angular/core";
+import { PushModule } from '@ngrx/component';
+import { BehaviorSubject, ReplaySubject, Subject } from "rxjs";
 
 @Component({
     standalone: true,
@@ -9,19 +10,27 @@ import { BehaviorSubject } from "rxjs";
     imports: [CommonModule],
     changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class CDChildComponent implements AfterViewInit {
-    init$ = new BehaviorSubject(false);
+export class CDChildComponent implements OnInit, AfterViewInit {
+    init$ = new BehaviorSubject<boolean>(false);
+
+    constructor() {
+        this.init$.subscribe(x => { console.log('Status', x); });
+    }
+
+    ngOnInit() {
+        this.init$.next(true);
+    }
 
     ngAfterViewInit(): void {
-        this.init$.next(true);
+        return;
     }
 }
 
 @Component({
     standalone: true,
     selector: 'nv-cd-parent',
-    template: `<p>Child status: {{child.init$ | async | json}}</p><nv-cd-child #child></nv-cd-child>`,
-    imports: [CDChildComponent, CommonModule],
+    template: `<p>Child status: {{child.init$ | async  | json}}</p><nv-cd-child #child></nv-cd-child>`,
+    imports: [CDChildComponent, CommonModule, PushModule],
     changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class CDParentComponent {
